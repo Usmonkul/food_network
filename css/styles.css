@@ -158,14 +158,14 @@ li {
   justify-content: center;
   align-items: center;
 }
-.feature-text {
+.small-heading {
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color:#DC780B;
   opacity: 0.7;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 .feature-heading {
   margin: 0;
@@ -228,15 +228,6 @@ li {
 .info-right {
   width: 488px;
 }
-.aboutus {
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #DC780B;
-  opacity: 0.7;
-  margin-bottom: 10px;
-}
 .info-heading {
   font-weight: bold;
   font-size: 32px;
@@ -248,4 +239,71 @@ li {
   line-height: 24px;
   opacity: 0.7;
   margin-bottom: 30px;
+}
+/* Menu section */
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-content {
+  width: 748px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.menu-heading {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.menu-text {
+  line-height: 24px;
+  margin: 0;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.food-box {
+  width: 360px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 75px 10px 0px 0px;
+  background: #FFFFFF;
+}
+.food-img {
+}
+.box-content-wrapper {
+  padding: 21px 25px;
+}
+.food-name-price {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.food-name-pr {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0;
+}
+.food-info-text {
+  line-height: 24px;
+  opacity: 0.7;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.order-and-rate {
+}
+.order-btn {
+  padding: 11px 12px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  border: none;
+}
+.foot-rate-star {
 }

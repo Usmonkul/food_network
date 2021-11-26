@@ -301,3 +301,46 @@ li {
 }
 .foot-rate-star {
 }
+.btn-learn-more {
+  background-color: white;
+  color: #DC780B;
+}
+/* App section */
+
+.app-section {
+  width: 100%;
+  max-height: 1440px;
+  height: 658px;
+  background:  linear-gradient(to bottom,
+  white 20px, #FBF1E7 618px, white 20px);
+
+
+}
+.content-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url(/img/phone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right calc(50% + -300px) bottom;
+
+}
+.app-text-content {
+  width: 555px;
+  padding-left: 100px;
+}
+.take-away {
+}
+.app-main-header {
+}
+.app-text {
+}
+.store-buttons-wrapper {
+}
+.btn {
+}
+.btn-app-store {
+}
+.btn-google-play-store {
+}

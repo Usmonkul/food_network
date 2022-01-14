@@ -1,5 +1,8 @@
 :root {
+  --main-color: #DC780B;
+  --text-color: #150C01;
 }
+/* Fonts */
 
 /* GENERAL */
 html {
@@ -20,12 +23,15 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: #fff;
   font-size: 16px;
+  line-height: 24px;
   color: #150C01;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Philosopher', sans-serif;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -51,27 +57,18 @@ li {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1440px;
-  padding-left: 150px;
-  padding-right: 150px;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 /* Heading-section */
+
 .header-hero-wrapper {
-  position: relative;
-  height: 679px;
-  margin-bottom: 106px;
-  max-width: 1445px;
-  margin-right: auto;
-  margin-left: auto;
+
 }
-.hero-img {
-  position: absolute;
-  top: 4%;
-  right: -34%;
-  z-index: -1;
-}
+
 .header-section {
   padding-top: 30px;
   display: flex;
@@ -81,74 +78,81 @@ li {
   margin-right: 35px;
 }
 .logo-img {
+  display: block;
   width: 44px;
   height: 43px;
 }
 .nav-group {
   display: flex;
   align-items: center;
-  /* margin-right: 415px; */
+  padding-left: 0;
 }
-.nav-item {
+.nav-item:not(:last-child) {
   margin-right: 40px;
 }
 .nav-link {
   line-height: 19px;
-  color:  #150C01;
+  color:  var(--text-color);
   opacity: 0.6;
 }
+.active-link,
 .nav-link:hover {
-  color: #DC780B;
-  font-weight: 500;
+  color: var(--main-color);
 }
 .btn {
   padding: 14px 30px;
-  background-color: #DC780B;
+  background-color: var(--main-color);;
   border-radius: 5px;
   color: #fff;
 }
 .book-now {
   margin-left: auto;
 }
+/* Main section */
+.main-content {
+  flex-grow: 1;
+}
 .hero-section {
-  padding-right: 0;
+  padding-top: 160px;
   padding-bottom: 100px;
 }
 .hero-content {
   width: 555px;
-  margin-top: 160px;
 }
 .hero-heading {
   font-size: 49px;
   line-height: 58px;
-  color: #150C01;
+  color: var(--text-color);
+  margin: 0;
   margin-bottom: 42px;
+  font-family: 'Philosopher', sans-serif;
 }
 .hero-text {
+  margin: 0;
   font-weight: 500;
   line-height: 24px;
   opacity: 0.7;
   margin-bottom: 50px;
 }
-
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
 .hero-btn1 {
   margin-right: 30px;
+  border: 0.5px solid transparent;
 }
 .hero-btn2 {
   background-color:  #fff;
-  border: 1.5px solid #E5E5E5;
-  color: #DC780B;
+  border: 0.5px solid var(--main-color);
+  color: var(--main-color);
 }
 /* Feature section */
 
 .features-section {
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 124px;
+  padding-bottom: 124px;
 }
 .feature-section-wrapper {
-  width: 1080px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,8 +163,9 @@ li {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color:#DC780B;
+  color:var(--main-color);
   opacity: 0.7;
+  margin: 0;
   margin-bottom: 10px;
 }
 .feature-heading {
@@ -169,7 +174,7 @@ li {
   font-weight: bold;
   font-size: 32px;
   line-height: 35px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .feature-box-wrapper {
   display: flex;
@@ -184,12 +189,26 @@ li {
 .feature-box:not(:last-child) {
   margin-right: 90px;
 }
-.icon-wrapper{
-  background-color: #E64D2E;
-  padding: 23px 22px;
-  /* opacity: 0.08; */
+.icon-wrapper {
+  /* background-color: #E64D2E; */
+  padding: 22px;
   border-radius: 50%;
   margin-bottom: 33px;
+}
+.icon1 {
+  background: rgba(143, 166, 50, 0.1);
+}
+.icon2 {
+  background: rgba(230, 77, 46, 0.08);
+}
+.icon3 {
+  background: rgba(220, 120, 11, 0.1);
+}
+.icon-wrapper img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  z-index: 10;
 }
 .box-heading {
   font-size: 25px;
@@ -199,6 +218,7 @@ li {
   margin-bottom: 15px;
 }
 .box-text {
+  margin: 0;
   line-height: 24px;
   text-align: center;
 }
@@ -207,7 +227,7 @@ li {
 .food-info-section {
   display: flex;
   align-items: center;
-  margin-bottom: 115px;
+  padding-bottom: 115px;
 }
 .left-info {
   margin-right: 97px;
@@ -216,10 +236,12 @@ li {
   width: 555px;
   height: 500px;
   display: block;
-
 }
 .info-right {
   width: 488px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .info-heading {
   font-weight: bold;
@@ -231,14 +253,16 @@ li {
 .info-text {
   line-height: 24px;
   opacity: 0.7;
+  margin: 0;
   margin-bottom: 30px;
 }
+
 /* Menu section */
 .menu-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .menu-content {
   width: 748px;
@@ -255,6 +279,7 @@ li {
 .menu-text {
   line-height: 24px;
   margin: 0;
+  opacity: 0.7;
 }
 .menu-list {
   display: flex;
@@ -270,6 +295,9 @@ li {
   background: #FFFFFF;
 }
 .food-img {
+  display: block;
+  width: 360px;
+  height: 264px;
 }
 .box-content-wrapper {
   padding: 21px 25px;
@@ -293,54 +321,264 @@ li {
   margin-bottom: 20px;
 }
 .order-and-rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .order-btn {
-  padding: 11px 12px;
+  padding: 11px;
   transform: matrix(1, 0, 0, -1, 0, 0);
+  font-size: 12px;
   border: none;
 }
-.foot-rate-star {
+.star-rate {
+  display: block;
+  width: 88px;
+  height: 16px;
 }
 .btn-learn-more {
-  background-color: white;
-  color: #DC780B;
+  background-color: #fff;
+  color: var(--main-color);
+  border: 0.1px solid rgba(220, 119, 11, 0.068);
 }
 /* App section */
 
 .app-section {
-  width: 100%;
-  max-height: 1440px;
-  height: 658px;
-  background:  linear-gradient(to bottom,
-  white 20px, #FBF1E7 618px, white 20px);
-
-
-}
-.content-wrapper {
-  height: 100%;
-  display: flex;
-  align-items: center;
+  padding: 67px 0px;
   background-image: url(/img/phone.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right calc(50% + -300px) bottom;
+  background-position: right calc(50% + -320px) bottom;
+  background-color: rgba(251, 241, 231, 0.4);
+}
+.content-wrapper {
 
 }
 .app-text-content {
+  padding-top: 114px;
+  padding-bottom: 130px;
   width: 555px;
-  padding-left: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.take-away {
-}
+
 .app-main-header {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 31px;
+  line-height: 41px;
 }
 .app-text {
+  margin: 0;
+  margin-bottom: 39px;
 }
 .store-buttons-wrapper {
-}
-.btn {
+  display: flex;
+  align-items: center;
 }
 .btn-app-store {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-color);
+}
+.btn-app-store::before {
+  content: " ";
+  width: 26px;
+  height: 26px;
+  display: block;
+  background: url('/img/apple-store.svg');
+  margin-right: 8px;
 }
 .btn-google-play-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #150C01;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-google-play-store::before {
+  content: " ";
+  width: 26px;
+  height: 26px;
+  display: block;
+  background: url('/img/google-play.svg');
+  margin-right: 8px;
+}
+/* Testimonial section */
+
+.testionial-section {
+  padding-top: 140px;
+  padding-bottom: 120px;
+  background-color: rgba(229, 229, 229, 0.3);
+  display: flex;
+  justify-content: center;
+}
+.testimonial-wrapper {
+  width: 804px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 73px;
+}
+.testimonial-main-heading {
+  margin: 0;
+  font-size: 31px;
+  line-height: 24px;
+  margin-bottom: 23px;
+  color: #000;
+}
+.testimonial-text {
+  margin: 0;
+  text-align: center;
+  opacity: 0.7;
+}
+.review {
+  width: 506px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review-img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-bottom: 42px;
+}
+.review-text {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.review-star {
+  margin-bottom: 32px;
+}
+.reviewer-name {
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.review-postion {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.7;
+}
+
+/* Contact */
+
+.contact-section {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background: rgba(220, 119, 11, 0.1);
+}
+.contact-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-main-heading {
+  margin: 0;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+.contact-input {
+  padding: 32px;
+  width: 600px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.contact-send-btn {
+  padding: 28px 57px;
+  border: none;
+}
+
+/* foooter */
+
+.footer {
+  padding-top: 130px;
+  padding-bottom: 110px;
+  background-color: #252525;
+}
+.footer-wrapper {
+  display: flex;
+}
+.footer-logo-contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 150px;
+}
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-left: 0;
+}
+.footer-nav-list:not(:last-child) {
+  margin-right: 100px;
+}
+.footer-nav-link:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer-link:not(:last-child) {
+  margin-bottom: 20px;
+}
+.link-active,
+.footer-link:hover {
+  color: #fff;
+}
+.link-active {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: 'Philosopher', sans-serif;
+}
+.socual-media {
+  display: flex;
+  align-items: center;
+}
+.social-media-link:not(:last-child) {
+  margin-right: 10px;
+}
+.media-icon {
+  display: block;
+  width: 21px;
+  height: 21px;
 }

@@ -5,22 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <main>
+  <main class="main-content">
     <div class="header-hero-wrapper">
       <header class="header-section container">
         <div class="logo">
           <a href="index.html" class="logo-link">
-            <img class="logo-img" src="/img/logo.jpg" alt="logo">
+            <img class="logo-img" src="/img/logo.svg" alt="logo">
           </a>
         </div>
         <nav class="navbar">
           <ul class="nav-group">
             <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link active-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">About us</a>
@@ -40,7 +43,7 @@
       </header>
       <section class="hero-section container">
         <div class="hero-content">
-          <p class="hero-heading">Making time a good time by making food the good food.</p>
+          <h2 class="hero-heading">Making time a good time by making food the good food.</h2>
           <p class="hero-text">There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also specialized equipment,</p>
           <div class="hero-buttons">
             <a href="#" class="btn hero-btn1">Order Now</a>
@@ -48,47 +51,44 @@
           </div>
         </div>
       </section>
-      <div class="hero-img container">
-        <img src="/img/hero-bg.png" alt="" class="hero-bg-img">
-      </div>
     </div>
-      <section class="features-section container">
-        <div class="feature-section-wrapper">
-          <p class="small-heading">Features</p>
-          <h4 class="feature-heading">Food with a New Passion</h4>
-          <div class="feature-box-wrapper">
-            <div class="feature-box">
-              <div class="icon-wrapper">
-                <img class="feature-icon" src="/img/home-mode.svg" alt="" width="52" height="52">
-              </div>
-              <p class="box-heading">Quality Food</p>
-              <p class="box-text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
+    <section class="features-section">
+      <div class="feature-section-wrapper container">
+        <p class="small-heading">Features</p>
+        <h4 class="feature-heading">Food with a New Passion</h4>
+        <div class="feature-box-wrapper">
+          <div class="feature-box">
+            <div class="icon-wrapper icon1">
+              <img class="feature-icon" src="/img/home-mode.svg" alt="" width="52" height="52">
             </div>
-            <div class="feature-box">
-              <div class="icon-wrapper">
-                <img class="feature-icon" src="/img/delivery.svg" alt="" width="52" height="52">
-              </div>
-              <p class="box-heading">Food Delivery</p>
-              <p class="box-text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
+            <p class="box-heading">Quality Food</p>
+            <p class="box-text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
+          </div>
+          <div class="feature-box">
+            <div class="icon-wrapper icon2">
+              <img class="feature-icon" src="/img/delivery.svg" alt="" width="52" height="52">
             </div>
-            <div class="feature-box">
-              <div class="icon-wrapper">
-                <img class="feature-icon" src="/img/smile.svg" alt="" width="52" height="52">
-              </div>
-              <p class="box-heading">Super Taste</p>
-              <p class="box-text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
+            <p class="box-heading">Food Delivery</p>
+            <p class="box-text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
+          </div>
+          <div class="feature-box">
+            <div class="icon-wrapper  icon3">
+              <img class="feature-icon" src="/img/smile.svg" alt="" width="52" height="52">
             </div>
+            <p class="box-heading">Super Taste</p>
+            <p class="box-text">It can be a very secure path to earn good money and make you very successful creative entrepreneur.</p>
           </div>
         </div>
-      </section>
-      <section class="food-info-section container">
-        <div class="left-info">
-          <img src="/img/girl-eating.png" alt="girl eating a meal" class="info-img" width="555" height="500">
-        </div>
-        <div class="info-right">
-          <p class="small-heading">ABOUT US</p>
-          <p class="info-heading">Food Stalls with Persons but  to  Product marketing plane
-            catlogues etc to. </p>
+      </div>
+    </section>
+    <section class="food-info-section container">
+      <div class="left-info">
+        <img src="/img/girl-eating.png" alt="girl eating a meal" class="info-img" width="555" height="500">
+      </div>
+      <div class="info-right">
+        <p class="small-heading">ABOUT US</p>
+        <h4 class="info-heading">Food Stalls with Persons but  to  Product marketing plane
+          catlogues etc to. </h4>
           <p class="info-text">There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also <br> equipment  make your marketing plane Effective.</p>
           <a href="#" class="btn info-btn">Read More</a>
         </div>
@@ -96,7 +96,7 @@
       <section class="menu-section container">
         <div class="menu-content">
           <p class="small-heading">Menu</p>
-          <p class="menu-heading">Food Full of treaty Love</p>
+          <h4 class="menu-heading">Food Full of treaty Love</h4>
           <p class="menu-text">There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, </p>
         </div>
         <div class="menu-box-wrapper">
@@ -105,13 +105,13 @@
               <img src="/img/grill.png" alt="" class="food-img" width="360" height="264">
               <div class="box-content-wrapper">
                 <div class="food-name-price">
-                  <p class="food-name-pr">Vegie Muffen</p>
+                  <h4 class="food-name-pr">Vegie Muffen</h4>
                   <span class="food-name-pr">16$</span>
                 </div>
                 <p class="food-info-text">There are many things are needed to start the Fast Food Business.</p>
                 <div class="order-and-rate">
                   <button class="btn order-btn">+</button>
-                  <span class="foot-rate-star"></span>
+                  <img class="star-rate" src="/img/4star.svg" width="88" height="16" alt="star-rate">
                 </div>
               </div>
             </li>
@@ -119,13 +119,13 @@
               <img src="/img/steak.png" alt="" class="food-img" width="360" height="264">
               <div class="box-content-wrapper">
                 <div class="food-name-price">
-                  <p class="food-name-pr">Salads</p>
+                  <h4 class="food-name-pr">Salads</h4>
                   <span class="food-name-pr">12$</span>
                 </div>
                 <p class="food-info-text">There are many things are needed to start the Fast Food Business.</p>
                 <div class="order-and-rate">
                   <button class="btn order-btn">+</button>
-                  <span class="foot-rate-star"></span>
+                  <img class="star-rate" src="/img/5star.svg" width="88" height="16" alt="star-rate">
                 </div>
               </div>
             </li>
@@ -133,13 +133,13 @@
               <img src="/img/burger.png" alt="" class="food-img" width="360" height="264">
               <div class="box-content-wrapper">
                 <div class="food-name-price">
-                  <p class="food-name-pr">Burger</p>
-                  <span class="food-price">10$</span>
+                  <h4 class="food-name-pr">Burger</h4>
+                  <span class="food-name-pr">10$</span>
                 </div>
                 <p class="food-info-text">There are many things are needed to start the Fast Food Business.</p>
                 <div class="order-and-rate">
                   <button class="btn order-btn">+</button>
-                  <span class="foot-rate-star"></span>
+                  <img class="star-rate" src="/img/3star.svg" width="88" height="16" alt="star-rate">
                 </div>
               </div>
             </li>
@@ -147,13 +147,13 @@
               <img src="/img/salad.png" alt="" class="food-img" width="360" height="264">
               <div class="box-content-wrapper">
                 <div class="food-name-price">
-                  <p class="food-name-pr">Delmonico Steak dish</p>
+                  <h4 class="food-name-pr">Delmonico Steak dish</h4>
                   <span class="food-name-pr">14$</span>
                 </div>
                 <p class="food-info-text">There are many things are needed to start the Fast Food Business.</p>
                 <div class="order-and-rate">
                   <button class="btn order-btn">+</button>
-                  <span class="foot-rate-star"></span>
+                  <img class="star-rate" src="/img/2star.svg" width="88" height="16" alt="star-rate">
                 </div>
               </div>
             </li>
@@ -161,13 +161,13 @@
               <img src="/img/osh.png" alt="" class="food-img" width="360" height="264">
               <div class="box-content-wrapper">
                 <div class="food-name-price">
-                  <p class="food-name-pr">Egg Masala</p>
+                  <h4 class="food-name-pr">Egg Masala</h4>
                   <span class="food-name-pr">9$</span>
                 </div>
                 <p class="food-info-text">There are many things are needed to start the Fast Food Business.</p>
                 <div class="order-and-rate">
                   <button class="btn order-btn">+</button>
-                  <span class="foot-rate-star"></span>
+                  <img class="star-rate" src="/img/4star.svg" width="88" height="16" alt="star-rate">
                 </div>
               </div>
             </li>
@@ -175,13 +175,13 @@
               <img src="/img/mix-salad.png" alt="" class="food-img" width="360" height="264">
               <div class="box-content-wrapper">
                 <div class="food-name-price">
-                  <p class="food-name-pr">Peach Melba dish</p>
+                  <h4 class="food-name-pr">Peach Melba dish</h4>
                   <span class="food-name-pr">15$</span>
                 </div>
                 <p class="food-info-text">There are many things are needed to start the Fast Food Business.</p>
                 <div class="order-and-rate">
                   <button class="btn order-btn">+</button>
-                  <span class="foot-rate-star"></span>
+                  <img class="star-rate" src="/img/3star.svg" width="88" height="16" alt="star-rate">
                 </div>
               </div>
             </li>
@@ -192,8 +192,8 @@
       <section class="app-section">
         <div class="content-wrapper container">
           <div class="app-text-content ">
-            <a href="#" class="take-away">take away</a>
-            <h1 class="app-main-header">Food Stalls with Persons but  to  Product marketing plane. </h1>
+            <a href="#" class="small-heading">take away</a>
+            <h2 class="app-main-header">Food Stalls with Persons but  to  Product marketing plane. </h2>
             <p class="app-text">There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also specialized equipmentwith Persons but also  Just Food Stalls with Persons.</p>
             <div class="store-buttons-wrapper">
               <a href="#" class="btn btn-app-store">App Store</a>
@@ -203,103 +203,117 @@
         </div>
       </section>
       <section class="testionial-section">
-        <div class="testimonial-wrapper">
+        <div class="testimonial-wrapper container">
           <div class="testimonial-top">
-            <p class="testimonial heading">testimonial</p>
+            <p class="small-heading">testimonial</p>
             <h2 class="testimonial-main-heading">Making Food great again and again</h2>
-            <p class="testimonial text">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc to make your.</p>
+            <p class="testimonial-text">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc to make your.</p>
           </div>
           <div class="review">
-            <img src="" alt="" class="review-img">
+            <img src="/img/costumer.png" alt="" class="review-img">
             <p class="review-text">You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, Effective Product catlogues etc very successful to make your.</p>
-            <div class="review-star"></div>
-            <p class="reviewer-name">Augusta W. Reynoso</p>
-            <p class="review-postion">UI&UX Designer</p>
+            <div class="review-star">
+              <img src="/img/4star.svg" alt="review star" width="88" height="16">
+            </div>
+            <span class="reviewer-name">Augusta W. Reynoso</span>
+            <span class="review-postion">UI&UX Designer</span>
           </div>
         </div>
       </section>
       <section class="contact-section">
-        <p class="contact-heading">contact</p>
-        <h2 class="contact-main-heading">Food Stalls with Persons but also specialized equipment, Skills to manage.</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="text" name="message" id="message" aria-label="message" placeholder="Enter your message">
-          <button class="btn contact-send-btn" type="submit" value="send">Send</button>
-        </form>
+        <div class="contact-section-wrapper container">
+          <p class="small-heading">contact</p>
+          <h3 class="contact-main-heading">Food Stalls with Persons but also specialized <br> equipment, Skills to manage.</h3>
+          <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="contact-input" type="text" name="message" id="message" aria-label="message" placeholder="Enter your message">
+            <button class="btn contact-send-btn" type="submit" value="send">Send</button>
+          </form>
+        </div>
       </section>
-  </main>
-  <footer class="footer container">
-    <div class="footer-logo-contact-box">
-      <img src="/img/logo.jpg" alt="logo" class="footer-logo">
-      <a href="#">www.usmonkhakimov.com</a>
-      <a href="mailto:usmonhakimov1999@gmail.com">usmonhakimov1999@gmail.com</a>
-      <a href="tel:+74851180325">Phone: +7 485-118-03-25</a>
-    </div>
-    <nav class="footer-nav">
-      <ul class="footer-nav-list">
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link link-active">Home</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Landingpage</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Documentation</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Referral Program</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">UI & UX Design</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Web Design</a>
-        </li>
-      </ul>
-      <ul class="footer-nav-list">
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link link-active">Menu</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Landingpage</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Documentation</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Referral Program</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">UI & UX Design</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Web Design</a>
-        </li>
-      </ul>
-      <ul class="footer-nav-list">
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link link-active">Company</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Landingpage</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Documentation</a>
-        </li>
-        <li class="footer-nav-link">
-          <a href="#" class="footer-link">Referral Program</a>
-        </li>
-        <li class="footer-nav-link">
-          <div class="socual-media">
-            <a href="#" class="social-media-link"><img src="" alt="" class="media-icon"></a>
-            <a href="#" class="social-media-link"><img src="" alt="" class="media-icon"></a>
-            <a href="#" class="social-media-link"><img src="" alt="" class="media-icon"></a>
-            <a href="#" class="social-media-link"><img src="" alt="" class="media-icon"></a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </footer>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-logo-contact-box">
+          <img src="/img/logo.svg" alt="logo" class="footer-logo" width="60" height="60">
+          <a class="footer-link" href="#">www.usmonkhakimov.com</a>
+          <a class="footer-link" href="mailto:usmonhakimov1999@gmail.com">usmonhakimov1999@gmail.com</a>
+          <a class="footer-link" href="tel:+74851180325">Phone: +7 485-118-03-25</a>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link link-active">Home</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Landingpage</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Documentation</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Referral Program</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">UI & UX Design</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Web Design</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link link-active">Menu</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Landingpage</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Documentation</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Referral Program</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">UI & UX Design</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Web Design</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link link-active">Company</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Landingpage</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Documentation</a>
+            </li>
+            <li class="footer-nav-link">
+              <a href="#" class="footer-link">Referral Program</a>
+            </li>
+            <li class="footer-nav-link">
+              <div class="socual-media">
+                <a href="#" class="social-media-link">
+                  <img src="/img/instagram.svg" alt="" class="media-icon" width="21" height="21">
+                </a>
+                <a href="#" class="social-media-link">
+                  <img src="/img/facebook.svg" alt="" class="media-icon" width="21" height="21">
+                </a>
+                <a href="#" class="social-media-link">
+                  <img src="/img/twitter.svg" alt="" class="media-icon" width="21" height="21">
+                </a>
+                <a href="#" class="social-media-link">
+                  <img src="/img/youtube.svg" alt="" class="media-icon" width="21" height="21">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+    <script src="js/main.js"></script>
+  </body>
+  </html>

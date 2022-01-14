@@ -65,10 +65,6 @@ li {
 }
 /* Heading-section */
 
-.header-hero-wrapper {
-
-}
-
 .header-section {
   padding-top: 30px;
   display: flex;
@@ -105,6 +101,10 @@ li {
   border-radius: 5px;
   color: #fff;
 }
+.btn:hover {
+  background-color: rgba(220, 119, 11, 0.1);
+  color: #DC780B;
+}
 .book-now {
   margin-left: auto;
 }
@@ -115,6 +115,9 @@ li {
 .hero-section {
   padding-top: 160px;
   padding-bottom: 100px;
+  background-image: url('/img/hero-bg.png');
+  background-repeat: no-repeat;
+  background-position: calc(50% + 320px);
 }
 .hero-content {
   width: 555px;
@@ -150,7 +153,7 @@ li {
 /* Feature section */
 
 .features-section {
-  padding-bottom: 124px;
+  padding-top: 106px;
 }
 .feature-section-wrapper {
   display: flex;
@@ -225,9 +228,16 @@ li {
 
 /* Info section */
 .food-info-section {
+  padding-top: 124px;
+  padding-bottom: 115px;
+  width: 100%;
+  background-image: url('/img/bg-decor.png');
+  background-repeat: no-repeat;
+  background-position: calc(50% - 800px);
+}
+.food-info-wrapper {
   display: flex;
   align-items: center;
-  padding-bottom: 115px;
 }
 .left-info {
   margin-right: 97px;
@@ -345,15 +355,13 @@ li {
 
 .app-section {
   padding: 67px 0px;
+  background-color: rgba(251, 241, 231, 0.4);
   background-image: url(/img/phone.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right calc(50% + -320px) bottom;
-  background-color: rgba(251, 241, 231, 0.4);
 }
-.content-wrapper {
 
-}
 .app-text-content {
   padding-top: 114px;
   padding-bottom: 130px;
@@ -568,6 +576,7 @@ li {
 .link-active {
   margin-bottom: 30px;
   font-weight: 700;
+  font-size: 18px;
   font-family: 'Philosopher', sans-serif;
 }
 .socual-media {

@@ -1,6 +1,7 @@
 :root {
-  --main-color: #DC780B;
-  --text-color: #150C01;
+  --main-color: #dc780b;
+  --text-color: #150c01;
+  --light-bg: rgba(220, 119, 11, 0.1);
 }
 /* Fonts */
 
@@ -27,10 +28,15 @@ body {
   background-color: #fff;
   font-size: 16px;
   line-height: 24px;
-  color: #150C01;
+  color: #150c01;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Philosopher', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Philosopher", sans-serif;
 }
 img {
   max-width: 100%;
@@ -52,7 +58,6 @@ li {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 /* CONTAINER */
 .container {
@@ -88,7 +93,7 @@ li {
 }
 .nav-link {
   line-height: 19px;
-  color:  var(--text-color);
+  color: var(--text-color);
   opacity: 0.6;
 }
 .active-link,
@@ -97,13 +102,65 @@ li {
 }
 .btn {
   padding: 14px 30px;
-  background-color: var(--main-color);;
+  background-color: var(--main-color);
   border-radius: 5px;
   color: #fff;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
 }
-.btn:hover {
-  background-color: rgba(220, 119, 11, 0.1);
-  color: #DC780B;
+.btn-dark {
+  padding: 14px 30px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 5px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+.btn-dark::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  color: #dc780b;
+  transition: all 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+.btn-dark:hover {
+  color: #fff;
+}
+.btn-dark:hover::before {
+  transform: translateX(0);
+}
+.btn-light {
+  padding: 14px 30px;
+  border: 1px solid var(--light-bg);
+  color: var(--main-color);
+  border-radius: 5px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+.btn-light::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-bg);
+  color: #dc780b;
+  transition: all 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+.btn-light:hover::before {
+  transform: translateX(0);
 }
 .book-now {
   margin-left: auto;
@@ -115,7 +172,7 @@ li {
 .hero-section {
   padding-top: 160px;
   padding-bottom: 100px;
-  background-image: url('/img/hero-bg.png');
+  background-image: url("/img/hero-bg.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 320px);
 }
@@ -128,7 +185,7 @@ li {
   color: var(--text-color);
   margin: 0;
   margin-bottom: 42px;
-  font-family: 'Philosopher', sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
 .hero-text {
   margin: 0;
@@ -143,12 +200,6 @@ li {
 }
 .hero-btn1 {
   margin-right: 30px;
-  border: 0.5px solid transparent;
-}
-.hero-btn2 {
-  background-color:  #fff;
-  border: 0.5px solid var(--main-color);
-  color: var(--main-color);
 }
 /* Feature section */
 
@@ -166,7 +217,7 @@ li {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color:var(--main-color);
+  color: var(--main-color);
   opacity: 0.7;
   margin: 0;
   margin-bottom: 10px;
@@ -231,7 +282,7 @@ li {
   padding-top: 124px;
   padding-bottom: 115px;
   width: 100%;
-  background-image: url('/img/bg-decor.png');
+  background-image: url("/img/bg-decor.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 800px);
 }
@@ -302,7 +353,7 @@ li {
   margin-bottom: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 75px 10px 0px 0px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .food-img {
   display: block;
@@ -347,8 +398,6 @@ li {
   height: 16px;
 }
 .btn-learn-more {
-  background-color: #fff;
-  color: var(--main-color);
   border: 0.1px solid rgba(220, 119, 11, 0.068);
 }
 /* App section */
@@ -398,7 +447,7 @@ li {
   width: 26px;
   height: 26px;
   display: block;
-  background: url('/img/apple-store.svg');
+  background: url("/img/apple-store.svg");
   margin-right: 8px;
 }
 .btn-google-play-store {
@@ -406,7 +455,7 @@ li {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  color: #150C01;
+  color: #150c01;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .btn-google-play-store::before {
@@ -414,7 +463,7 @@ li {
   width: 26px;
   height: 26px;
   display: block;
-  background: url('/img/google-play.svg');
+  background: url("/img/google-play.svg");
   margin-right: 8px;
 }
 /* Testimonial section */
@@ -520,6 +569,10 @@ li {
   padding: 28px 57px;
   border: none;
 }
+.contact-send-btn:hover {
+  background-color: var(--light-bg);
+  color: var(--main-color);
+}
 
 /* foooter */
 
@@ -577,7 +630,7 @@ li {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 18px;
-  font-family: 'Philosopher', sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
 .socual-media {
   display: flex;
